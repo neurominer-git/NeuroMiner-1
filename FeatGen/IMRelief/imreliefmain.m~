@@ -1,0 +1,94 @@
+
+% =========================================================================
+% FORMAT [R, nsigma, nlambda] = imreliefmain(Y, labels, SortInd)
+% =========================================================================
+% This function provides an interface between NeuroMiner and the IMRelief
+% feature selection function. It invokes either the CPU or the GPU version
+% of IMRelief depending on the hardware / user settings and performs
+% multiple invocations of IMRelief if either lambda or sigma parameters
+% ranges have been defined by the used
+%
+% Inputs:
+% Y :           [m x n] matrix, with m samples / patterns and n features
+% labels :      m x 1 vector containing supervision info (currently only
+%               two-class problems supported)
+% (SortInd :    m x 1 resampling vector)
+%
+% Outputs:      
+% R :           n x 1 Weight vector
+% nsigma :      number of sigma parameters tested
+% nlambda :     number of lambda parameters tested
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% (c) Nikolaos Koutsouleris, 07/2011
+function [R, nsigma, nlambda] = imreliefmain(Y, labels, SortInd)
+
+global FEATSEL CUDA CPUAVAIL 
+
+if nargin < 4, if ~isempty(SortInd), Y = resamp(Y, SortInd, CPUAVAIL); end; end
+nsigma = numel(FEATSEL.imrelief.sigma);
+nlambda = numel(FEATSEL.imrelief.lambda);
+distance = FEATSEL.imrelief.distance;
+sigma = FEATSEL.imrelief.sigma;
+lambda = FEATSEL.imrelief.lambda;
+maxiter = FEATSEL.imrelief.maxiter;
+plotfigure =FEATSEL.imrelief.plotfigure;
+
+if nsigma > 1 || nlambda > 1, end
+if size(Y,2) ~= length(labels), Y = Y'; end
+if ~CUDA
+    IMRelief = 'IMRelief_Sigmoid_FastImple';
+else
+    IMRelief = 'IMRelief_Sigmoid_FastImple_gpu';
+    Y = GPUsingle(Y);
+end
+tSum = 0;
+
+% Eliminate useless features
+[ Y, NonPruneVec ] = nk_ElimZeroFeat(Y, 1);
+
+if CPUAVAIL > 1 && ~CUDA && nsigma > 1
+    if CPUAVAIL <= nsigma,
+        cpus = floor(nsigma/CPUAVAIL);
+    else
+        cpus = nsigma;
+    end
+    R = cell(nsigma, nlambda);
+    feval('matlabpool','open',cpus)
+    parfor i=1:nsigma
+        for j=1:nlambda
+            R{i}{j} = zeros(numel(NonPruneVec),1);
+            [DScore, tElapsed] = feval(IMRelief, Y, labels, ...
+                                    distance, ...
+                                    sigma(i), ...
+                                    lambda(j), ...
+                                    maxiter, ...
+                                    plotfigure);
+            tSum = tSum + tElapsed;
+            R{i}{j}(NonPruneVec) = DScore;
+        end
+    end
+    matlabpool close 
+    R = cell2mat(R);
+    size(R)
+else
+    R = zeros(numel(NonPruneVec),nsigma, nlambda);
+    for i=1:nsigma
+        for j=1:nlambda
+            [DScore, tElapsed] = feval(IMRelief, Y, labels, ...
+                                    distance, ...
+                                    sigma(i), ...
+                                    lambda(j), ...
+                                    maxiter, ...
+                                    plotfigure);
+            tSum = tSum + tElapsed;
+            if CUDA, 
+                R(NonPruneVec,i,j) = double(DScore);
+            else
+                R(NonPruneVec,i,j) = DScore;
+            end
+        end
+    end
+
+end
+if nsigma > 1 || nlambda > 1, fprintf('\nComplete CV processing time: %g sec', tSum); end
+return

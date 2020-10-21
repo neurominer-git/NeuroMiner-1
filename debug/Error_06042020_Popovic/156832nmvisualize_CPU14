@@ -1,0 +1,1955 @@
+
+Loading NM structure: /volume/mitnvp1_scratch/DP_SPLS/02-Apr-2020/clean_data_collection_pedo_DTI.mat>>> Initializing NeuroMiner
+
+Root path is /home/dpopovic/.mcrCache9.5/NeuroM0/NeuroMinerMC/NeuroMiner_Elessar_compile.
+	~~~~~~~~~~~~~~~~~~~~~~~ 
+	  N E U R O M I N E R 
+	~~~~~~~~~~~~~~~~~~~~~~~ 
+	version 1.0 | ELESSAR  
+
+(c) Nikolaos Koutsouleris & the PRONIA-WP2 team, 11/2018 
+    nm@pronia.eu 
+
+You are here: NM:HPC:VISMODELS >>>#1#2
+PROCESSING OF CONCATENATED MODALITIES: EARLY FUSION -> 
+PERMUTATION MODE ENABLED.
+PERMUTATION MODE ENABLED.
+---------------------------------------------------------------------------------------------
+Skipping CV2 [1,1] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [1,2] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [1,3] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [1,4] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [1,5] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [1,6] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [1,7] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [1,8] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [1,9] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [1,10] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [2,1] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [2,2] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [2,3] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [2,4] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [2,5] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [2,6] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [2,7] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [2,8] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [2,9] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [2,10] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [3,1] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [3,2] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [3,3] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [3,4] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [3,5] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [3,6] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [3,7] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [3,8] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [3,9] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [3,10] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [4,1] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [4,2] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [4,3] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [4,4] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [4,5] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [4,6] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [4,7] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [4,8] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [4,9] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [4,10] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [5,1] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [5,2] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [5,3] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [5,4] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [5,5] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [5,6] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [5,7] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [5,8] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [5,9] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [5,10] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [6,1] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [6,2] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [6,3] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [6,4] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [6,5] (user-defined).
+---------------------------------------------------------------------------------------------
+Skipping CV2 [6,6] (user-defined).
+---------------------------------------------------------------------------------------------
+Loading CVdatamat for CV2 partition [6,7]:
+/volume/mitnvp1_scratch/DP_SPLS/02-Apr-2020/NM_ID737883_34244_A3_EaFu_DTI_CONN_AC_libSVMl1_1010_1010NCV_5000perms/LIBSVM/EaFu_DTI_Conn_AC_libSVMl1_1010_1010NCV_CVdatamat_oCV6.7_var1_var2_ID737883_34244.mat
+Computing pre-processing parameters for CV2 [6,7].
+
+Generate pre-processing parameter array for CV2 partition [6,7].
+
+No preprocessing parameter optimization included in trained model
+Processing Mode: binary / regression preprocessing
+Original dimensionality: 72
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [1, 1, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [1, 1]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.06s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.03s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.23s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.02s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.01s.	Completed in 0.34s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [1, 2, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [1, 2]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.01s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.02s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [1, 3, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [1, 3]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.01s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.01s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.03s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [1, 4, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [1, 4]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [1, 5, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [1, 5]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.01s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.01s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [1, 6, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [1, 6]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [1, 7, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [1, 7]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [1, 8, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [1, 8]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [1, 9, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [1, 9]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [1, 10, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [1, 10]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [2, 1, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [2, 1]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [2, 2, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [2, 2]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [2, 3, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [2, 3]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [2, 4, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [2, 4]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [2, 5, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [2, 5]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [2, 6, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [2, 6]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [2, 7, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [2, 7]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [2, 8, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [2, 8]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [2, 9, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [2, 9]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [2, 10, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [2, 10]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [3, 1, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [3, 1]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [3, 2, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [3, 2]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [3, 3, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [3, 3]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [3, 4, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [3, 4]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [3, 5, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [3, 5]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [3, 6, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [3, 6]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [3, 7, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [3, 7]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [3, 8, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [3, 8]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [3, 9, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [3, 9]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [3, 10, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [3, 10]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [4, 1, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [4, 1]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [4, 2, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [4, 2]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [4, 3, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [4, 3]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [4, 4, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [4, 4]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [4, 5, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [4, 5]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [4, 6, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [4, 6]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [4, 7, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [4, 7]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [4, 8, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [4, 8]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [4, 9, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [4, 9]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [4, 10, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [4, 10]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [5, 1, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [5, 1]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [5, 2, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [5, 2]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [5, 3, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [5, 3]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [5, 4, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [5, 4]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [5, 5, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [5, 5]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [5, 6, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [5, 6]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [5, 7, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [5, 7]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [5, 8, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [5, 8]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [5, 9, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [5, 9]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [5, 10, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [5, 10]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [6, 1, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [6, 1]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [6, 2, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [6, 2]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [6, 3, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [6, 3]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [6, 4, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [6, 4]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [6, 5, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [6, 5]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [6, 6, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [6, 6]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [6, 7, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [6, 7]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [6, 8, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [6, 8]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.01s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [6, 9, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [6, 9]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [6, 10, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [6, 10]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [7, 1, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [7, 1]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [7, 2, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [7, 2]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [7, 3, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [7, 3]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [7, 4, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [7, 4]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [7, 5, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [7, 5]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [7, 6, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [7, 6]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [7, 7, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [7, 7]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [7, 8, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [7, 8]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [7, 9, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [7, 9]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.01s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [7, 10, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [7, 10]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.01s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [8, 1, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [8, 1]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [8, 2, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [8, 2]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [8, 3, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [8, 3]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [8, 4, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [8, 4]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [8, 5, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [8, 5]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [8, 6, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [8, 6]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [8, 7, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [8, 7]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [8, 8, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [8, 8]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [8, 9, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [8, 9]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [8, 10, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [8, 10]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [9, 1, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [9, 1]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [9, 2, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [9, 2]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [9, 3, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [9, 3]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [9, 4, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [9, 4]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [9, 5, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [9, 5]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [9, 6, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [9, 6]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [9, 7, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [9, 7]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [9, 8, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [9, 8]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [9, 9, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [9, 9]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [9, 10, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [9, 10]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [10, 1, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [10, 1]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [10, 2, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [10, 2]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [10, 3, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [10, 3]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [10, 4, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [10, 4]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [10, 5, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [10, 5]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [10, 6, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [10, 6]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [10, 7, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [10, 7]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [10, 8, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [10, 8]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [10, 9, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [10, 9]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+-----------------------------------------------------------------------------------
+Working on data partition: CV2 [6, 7], CV1 [10, 10, HC vs PEDO]
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+* UNIVARIATE PARTIAL CORRELATION FOR COVARIATE EFFECTS
+	- Nuisance covariate: Age
+	-> Including intercept.
+	-> Covariate effects will be removed from data.
+* SCALING [0 1]
+* PRUNE ATTRIBUTES
+Preprocessing sequence setup completed. Executing ...
+No Training parameters found. Training mode enabled.
+CV1 [10, 10]: Start preprocessing sequence.
+Step #1/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #2/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.
+Step #3/5:	Partial correlations ... remove covariate effects ... intercept enabled ... Done in 0.00s.
+Step #4/5:	Scaling each feature to [0, 1] ... Done in 0.00s.
+Step #5/5:	Attribute pruning ... 0 features eliminated (0 Zero-Var, 0 NaN, 0 Inf) Done in 0.00s.	Completed in 0.00s.
+Need to evaluate 100 models in this CV2 partition
+Constructing predictive pattern(s) in CV2 [ 6 , 7], CV1 [ 1 , 1]: 1 model(s), SVM (L1-C-SVC) ML params [ Slack: 4.000000 ]. 
+	  1 | OptModel => 75.00 | Permuting:	Index in position 2 exceeds array bounds.
+
+Error in nk_VisXPermY (line 13)
+
+Error in nk_VisModels (line 537)
+
+Error in nk_VisModelsPrep>VisModelsPrep (line 290)
+
+Error in nk_VisModelsPrep (line 210)
+
+Error in nk_VisModels_batch (line 85)
+
+Error in NeuroMinerMCCMain (line 14)
+
+MATLAB:badsubscript

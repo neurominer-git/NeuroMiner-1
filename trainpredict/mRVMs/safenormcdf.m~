@@ -1,0 +1,5 @@
+function c = safenormcdf(x)
+thresh=-10;
+x(find(x<thresh))=thresh;
+%c=normcdf(x);
+c=phi(x); [m,n,p] = size(c); c = reshape(c,[m 2 p/2]);

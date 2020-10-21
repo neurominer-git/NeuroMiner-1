@@ -1,0 +1,65 @@
+The code presented in this package implements the Extreme Learning Machines algorithm proposed in:
+
+G.-B. Huang, H. Zhou, X. Ding, and R. Zhang, "Extreme Learning Machine for Regression and Multiclass Classification", IEEE Transactions on Systems, Man, and Cybernetics - Part B: Cybernetics,  vol. 42, no. 2, pp. 513-529, 2012.
+
+I do not claim to be author of the algorithm. Only the code has been developed by me.
+
+--------------------------------------------
+CONTENTS
+--------------------------------------------
+
+The package consists of several parts:
+(1) pure MATLAB implementation
+	elmTrain.m
+	elmPredict.m
+(2) ready to use library (template code)
+	elml.hpp
+(3) MATLAB MEX interfaced to the library
+	mexElmTrain
+	mexElmPredict
+(4) MATLAB utility function for data scaling
+	elmScale.m
+
+--------------------------------------------
+USAGE
+--------------------------------------------
+
+First ensure that your data is scaled between -1 and 1. Use the utility function elmScale to do this in MATLAB.
+
+Second the model needs to be trained from labeled dataset. The dataset consists of a matrix with samples and a vector with labels (positive integers). Use elmTrain or mexElmTrain function to compute the model:
+[inW bias outW]
+
+Third you can use the trained model to compute prediction scores on novel data. Use elmPredict or mexElmPredict function for this purpose.
+
+Finally you can obtain classification label by finding which class receives the largest score for each data sample.
+
+
+--------------------------------------------
+COMPILATION
+--------------------------------------------
+
+The package contains some pre-compiled MATLAB MEX binaries for Mac OS X and Linux OS (both 64bit).
+
+You can compile your own MEX file at any time using the provided source code. The only dependency for compilation is the Eigen3 framework.
+
+From MATLAB command prompt the compilation could be done as follows:
+
+mex -I{root of the Eigen3} mexElmTrain.cpp
+mex -I{root of the Eigen3} mexElmPredict.cpp
+
+On Ubuntu system with Eigen3 installed these commands look like this:
+
+mex -I/usr/include/eigen3 mexElmTrain.cpp
+mex -I/usr/include/eigen3 mexElmPredict.cpp
+
+
+--------------------------------------------
+NOTES AND KNOWN BUGS
+--------------------------------------------
+
+The code should be considered as early beta. It has been verified to work on several publicly available datasets. It needs better code factorization and cleaner & better error checking. Sometimes the code crashes MATLAB which is possibly due to exceptions occuring in the code...
+
+Currently the only and hard coded activation function is sigmoid. Future implementation should provide at least a choice of different functions.
+
+You are more than welcome to contribute these and any other corrections and improvements.
+

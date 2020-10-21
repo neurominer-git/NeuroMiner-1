@@ -1,0 +1,58 @@
+function [W_ACT, PX] = nk_WAction_config(W_ACT, PX, datadesc, brainmask, defaultsfl, parentstr)
+
+if ~exist('defaultsfl','var') || isempty(defaultsfl),  defaultsfl = 0; end;
+softflag            = 1;
+threshvec           = [25 50 75];
+clustfl             = 2; 
+cluststr            = {'yes','no'};
+exppar              = 1;
+act = 0;
+
+if ~defaultsfl
+    if ~isfield(W_ACT,'softflag'),      W_ACT.softflag = softflag; end
+    if ~isfield(W_ACT,'threshvec'),     W_ACT.threshvec = threshvec; end
+    if ~isfield(W_ACT,'clustflag'),     W_ACT.clustflag = clustfl; end
+    if ~isfield(W_ACT,'exponent'),      W_ACT.exponent = exppar; end
+    if ~exist('PX','var'),              PX = []; end
+    
+    menustr = 'Threshold or weight features using weight vector
+    
+    if W_ACT.softflag == 2 
+        threshstr = sprintf('Thresholding (Hard feature selection: %s)', nk_ConcatParamstr(W_ACT.threshvec));
+        menustr = sprintf('Thresholding of feature weights [ %s ]', threshstr); menuact = 1;
+        if datadesc.type
+            menustr = sprintf('%s|Clusterize voxels based on threshold vector [ %s ]', menustr, cluststr{W_ACT.clustflag}) ; menuact = [ menuact 2 ];
+        end
+    else
+        threshstr = 'weighting (Soft feature selection)';
+        menustr = sprintf('Tresholding or weighting of features [ %s ]', threshstr); menuact = 1;
+        menustr = sprintf('%s|Define exponential multiplier [ %s ]',menustr,nk_ConcatParamstr(W_ACT.exponent)); menuact = [ menuact 3];
+    end
+    
+    nk_PrintLogo
+    mestr = 'Extract features from rank / weight vector'; navistr = [parentstr ' >>> ' mestr]; cprintf('*blue','\nYou are here: %s >>> ',parentstr); 
+
+    act = nk_input(mestr,0,'mq', menustr , menuact);
+    
+    switch act
+
+        case 1
+            W_ACT.threshvec = nk_input('Define vector of percentile thresholds',0,'e',W_ACT.threshvec);
+            if numel(W_ACT.threshvec)>1 || W_ACT.threshvec>0 , W_ACT.exponent = 0; end
+        case 2
+            W_ACT.clustflag = nk_input('Clusterize voxels based on thresholded weight vector',0,'yes|no',[1,2], W_ACT.clustflag);
+            if W_ACT.clustflag, W_ACT.brainmask = brainmask; end
+        
+        case 3
+            W_ACT.exponent = nk_input('Define exponential multiplier(s)',0,'e', W_ACT.exponent);            
+    end
+else   
+    W_ACT.threshvec = threshvec;
+    W_ACT.clustflag = clustfl;
+end
+
+PX = nk_AddParam(W_ACT.threshvec, 'Thresholds',1, PX,'reset');
+PX = nk_AddParam(W_ACT.exponent,'ExpMult', 1, PX, 'replace');
+
+if ~isempty(W_ACT.threshvec) && sum(W_ACT.threshvec)>0, PX = nk_AddParam(W_ACT.threshvec, 'Thresholds',1, PX); end
+if act, [W_ACT, PX] = nk_WAction_config(W_ACT, PX, datadesc, brainmask, [], parentstr); end

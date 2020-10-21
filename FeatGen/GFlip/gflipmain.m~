@@ -1,0 +1,83 @@
+function [DScore, idxF] = gflipmain(Y, BinLabels, cpus, FeatInd, SortInd)
+
+global FEATSEL
+
+kbin = size(BinLabels,1); ix = size(Y,2); ll=1;
+if nargin < 6, 
+    if ~isempty(SortInd),
+        Y = resamp(Y, SortInd, cpus); 
+    end; 
+end
+
+if nargin < 4 
+    FeatInd = true(1,size(Y,2)); 
+end
+if isempty(FeatInd)
+    FeatInd = true(1,size(Y,2)); 
+end
+
+gpu = FEATSEL.gflip.gpu;
+extra_param = FEATSEL.gflip.extra_param;
+
+switch FEATSEL.binmode
+    case 1
+        
+        DScore = zeros(ix,kbin);
+        idxF = false(ix,kbin);
+        
+        for i=1:kbin
+
+            ind1 = (BinLabels(i,1):BinLabels(i,2))';
+            labels1 = ones(length(ind1),1);
+
+            for j=i+1:kbin
+
+                ind2 = (BinLabels(j,1):BinLabels(j,2))';
+                labels2 = ones(length(ind2),1)*-1;
+                ind = [ind1;ind2];
+                labels = [labels1;labels2];
+                %labels = single(labels);
+                tY = extrX(Y, ind, cpus);
+                tY = tY(:,FeatInd);
+                FI = find(FeatInd(:,i));
+                %tY = single(tY); % Convert to single to save time
+                if strcmp(extra_param.beta,'auto'), 
+                    extra_param.beta = suggestBeta(tY, labels);
+                    fprintf(' (beta=%g)',extra_param.beta)
+                end
+                switch gpu
+                    case 0
+                        [idx, DScore(:,ll)] = gflip(tY, labels, extra_param);
+                    case 1
+                        [idx, DScore(:,ll)] = gflip_gpu(tY, labels, extra_param);
+                end
+                idxF(FI(idx),ll) = true;
+                ll=ll+1;
+            end
+        end
+        
+    case 0
+        
+        DScore = zeros(ix,1);
+        idxF = false(ix,1);
+        tY=Y(:,FeatInd);
+        FI = find(FeatInd);
+        
+        labels=[];
+        for i=1:length(BinLabels)
+            labels(BinLabels(i,1):BinLabels(i,2))=i;
+        end
+        if strcmp(extra_param.beta,'auto'), 
+            extra_param.beta = suggestBeta(tY, labels);
+            fprintf('(beta=%g)',extra_param.beta)
+        end
+        switch gpu
+            case 0
+               [idx, DScore] = gflip(tY, labels, extra_param);
+            case 1
+               [idx, DScore] = gflip_gpu(tY, labels, extra_param);
+        end
+        idxF(FI(idx)) = true;
+end
+
+return

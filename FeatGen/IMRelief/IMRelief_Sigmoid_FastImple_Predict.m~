@@ -1,0 +1,58 @@
+function [Prediction] = ...
+    IMRelief_Sigmoid_FastImple_Predict(tr_patterns, tr_targets, ts_patterns, Weight, distance, sigma)
+%--------------------------------------------------------------------------
+Uc = unique(tr_targets);
+if min(Uc)==-1
+    targets(targets==1) = 2;
+    %targets(targets==-1) = 1;
+    tr_targets = tr_targets/2+1.5; % transform targets into {1,2}
+end
+
+lUc = length(Uc); N = zeros(lUc,1); X = cell(lUc,1);
+for c = 1:lUc,
+    indC = tr_targets == c;
+    N(c) = sum(indC); 
+    X{c} = tr_patterns(:,indC); 
+end 
+
+[dim, N_ts_patterns] = size(ts_patterns);
+
+Prediction = zeros(N_ts_patterns,1);
+
+% Compute Probabilities
+for i = 1:N_ts_patterns,
+        
+        max_prob = zeros(lUc,1);
+        max_ind = zeros(lUc,1);
+        for c = 1:lUc
+    
+            switch lower(distance)
+                case {'euclidean'}
+                    Temp = (X{c} - repmat(ts_patterns(:,i),1,N(c))).^2;
+                case {'block'}
+                    Temp = abs(X{c} - repmat(ts_patterns(:,i),1,N(c)));
+            end
+
+            dist    = (Weight(:).^2)'*Temp;
+            temp_index = find(dist==0);
+            
+            %calculate probabilities
+            prob = exp(-dist/sigma);
+            if ~isempty(temp_index);prob(temp_index(1)) = 0;end
+
+            if sum(prob)~=0;
+                prob_1 = prob/sum(prob);
+            else
+                [dum,I] = sort(dist);
+                prob(I(2))=1;
+                prob_1=prob;
+            end
+            
+            [max_prob(c),max_ind(c)] = max(prob_1);
+            
+        end
+        
+        Prediction(i) = max(max_prob(c));
+        
+end
+

@@ -1,0 +1,20 @@
+R=rand(10,3);
+R=normc(R);
+H=R'*R;
+H=[H,zeros(3);zeros(3),zeros(3)];
+f=[0.2;0.3;0.1;0.05;0.05;0.05];
+A=[];
+b=[];
+Aeq=zeros(3,6);
+Aeq(1,1)=1;
+Aeq(1,4)=-1;
+Aeq(2,2)=1;
+Aeq(2,5)=-1;
+Aeq(3,1)=-1;
+Aeq(3,4)=-1;
+beq=zeros(3,1);
+x1 = quadprog(H,f,A,b,Aeq,beq)
+A=[eye(3),-eye(3);-eye(3),-eye(3)];
+b=zeros(6,1);
+x2 = quadprog(H,f,A,b)
+
