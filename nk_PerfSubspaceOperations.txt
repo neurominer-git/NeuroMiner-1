@@ -1,0 +1,17 @@
+function sY = nk_PerfSubspaceOperations(Y, I, FunArg)
+
+[dI, I] = nk_MakeDummyVariables(I);
+
+nI = numel(nI);
+
+sY = [];
+
+for i=1:nI
+    
+    % Extract subspace
+    iY = Y(:,dI(:,i));
+    
+    
+end
+
+for 
